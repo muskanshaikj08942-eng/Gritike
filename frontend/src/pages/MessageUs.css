@@ -1,0 +1,706 @@
+/* =========================================================
+   GRITIKE — MESSAGE US
+   Luxury Editorial Communication Page
+========================================================= */
+
+:root {
+  --message-navy: #07152f;
+  --message-navy-soft: #101f3b;
+  --message-gold: #b88a38;
+  --message-gold-light: #d1aa61;
+  --message-cream: #f6f2ea;
+  --message-white: #ffffff;
+  --message-border: rgba(7, 21, 47, 0.14);
+  --message-muted: #6e7788;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.message-page {
+  min-height: 100vh;
+
+  background: var(--message-cream);
+
+  color: var(--message-navy);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.message-hero {
+  padding: 90px 40px 75px;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(184, 138, 56, 0.08),
+      transparent 30%
+    );
+
+  border-bottom: 1px solid var(--message-border);
+}
+
+.message-hero-content {
+  max-width: 1120px;
+
+  margin: 0 auto;
+}
+
+
+.message-eyebrow {
+  margin: 0 0 16px;
+
+  color: var(--message-gold);
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+}
+
+
+.message-hero h1 {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(55px, 7vw, 90px);
+
+  line-height: 0.95;
+
+  font-weight: 400;
+
+  letter-spacing: -3px;
+
+  color: var(--message-navy);
+}
+
+
+.message-hero h1 span {
+  color: var(--message-gold);
+
+  font-style: italic;
+}
+
+
+.message-intro {
+  max-width: 650px;
+
+  margin: 27px 0 0;
+
+  color: var(--message-muted);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.message-content {
+  max-width: 1120px;
+
+  margin: 0 auto;
+
+  padding: 80px 40px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(0, 1.1fr);
+
+  gap: 90px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   INFORMATION
+========================================================= */
+
+.message-information {
+  padding-top: 10px;
+}
+
+
+.message-section-label {
+  margin: 0 0 12px;
+
+  color: var(--message-gold);
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+.message-information h2 {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 43px;
+
+  line-height: 1.08;
+
+  font-weight: 400;
+
+  letter-spacing: -1.5px;
+}
+
+
+.message-information h2 span {
+  color: var(--message-gold);
+
+  font-style: italic;
+}
+
+
+.message-description {
+  max-width: 500px;
+
+  margin: 25px 0 0;
+
+  color: var(--message-muted);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   DETAILS
+========================================================= */
+
+.message-details {
+  margin-top: 48px;
+
+  border-top: 1px solid var(--message-border);
+}
+
+
+.message-detail {
+  display: grid;
+
+  grid-template-columns: 42px 1fr;
+
+  gap: 17px;
+
+  padding: 23px 0;
+
+  border-bottom: 1px solid var(--message-border);
+}
+
+
+.detail-number {
+  padding-top: 3px;
+
+  color: var(--message-gold);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 14px;
+}
+
+
+.message-detail h3 {
+  margin: 0 0 7px;
+
+  color: var(--message-navy);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 18px;
+
+  font-weight: 400;
+}
+
+
+.message-detail p {
+  max-width: 390px;
+
+  margin: 0;
+
+  color: var(--message-muted);
+
+  font-size: 13px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   FORM WRAPPER
+========================================================= */
+
+.message-form-wrapper {
+  background: var(--message-white);
+
+  border: 1px solid var(--message-border);
+
+  box-shadow:
+    0 20px 55px rgba(7, 21, 47, 0.07);
+}
+
+
+.message-form {
+  padding: 45px;
+}
+
+
+/* =========================================================
+   FORM HEADING
+========================================================= */
+
+.form-heading {
+  margin-bottom: 35px;
+}
+
+
+.form-heading p {
+  margin: 0 0 9px;
+
+  color: var(--message-gold);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+.form-heading h2 {
+  margin: 0;
+
+  color: var(--message-navy);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 32px;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: var(--message-navy);
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+
+  text-transform: uppercase;
+}
+
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 14px 15px;
+
+  border: 1px solid rgba(7, 21, 47, 0.18);
+
+  border-radius: 0;
+
+  outline: none;
+
+  background: #fdfcf9;
+
+  color: var(--message-navy);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.form-group input {
+  height: 49px;
+}
+
+
+.form-group textarea {
+  min-height: 145px;
+
+  resize: vertical;
+
+  line-height: 1.6;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #a2a7b0;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--message-gold);
+
+  background: var(--message-white);
+
+  box-shadow:
+    0 0 0 3px rgba(184, 138, 56, 0.08);
+}
+
+
+/* =========================================================
+   MESSAGES
+========================================================= */
+
+.message-error,
+.message-success {
+  padding: 13px 15px;
+
+  margin-bottom: 20px;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+.message-error {
+  background: #fff4f4;
+
+  border: 1px solid #e2bcbc;
+
+  color: #8c3838;
+}
+
+
+.message-success {
+  background: #f2f8f3;
+
+  border: 1px solid #bfd4c2;
+
+  color: #416b4a;
+}
+
+
+/* =========================================================
+   SEND BUTTON
+========================================================= */
+
+.send-message-btn {
+  width: 100%;
+
+  min-height: 53px;
+
+  padding: 0 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  border: 1px solid var(--message-navy);
+
+  background: var(--message-navy);
+
+  color: var(--message-white);
+
+  cursor: pointer;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.send-message-btn span {
+  font-size: 18px;
+
+  font-weight: 400;
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+.send-message-btn:hover {
+  background: var(--message-gold);
+
+  border-color: var(--message-gold);
+
+  transform: translateY(-1px);
+}
+
+
+.send-message-btn:hover span {
+  transform: translateX(5px);
+}
+
+
+.send-message-btn:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* =========================================================
+   FORM NOTE
+========================================================= */
+
+.form-note {
+  margin: 16px 0 0;
+
+  text-align: center;
+
+  color: #8b919b;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.message-bottom {
+  max-width: 1120px;
+
+  margin: 0 auto;
+
+  padding: 0 40px 80px;
+
+  box-sizing: border-box;
+}
+
+
+.message-back-btn {
+  padding: 13px 21px;
+
+  border: 1px solid rgba(7, 21, 47, 0.3);
+
+  background: transparent;
+
+  color: var(--message-navy);
+
+  cursor: pointer;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.message-back-btn:hover {
+  background: var(--message-navy);
+
+  border-color: var(--message-navy);
+
+  color: var(--message-white);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .message-content {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+
+    padding-top: 60px;
+  }
+
+  .message-information {
+    max-width: 700px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .message-hero {
+    padding: 60px 22px 55px;
+  }
+
+  .message-hero h1 {
+    font-size: 55px;
+
+    letter-spacing: -2px;
+  }
+
+  .message-intro {
+    font-size: 14px;
+  }
+
+  .message-content {
+    padding: 50px 22px;
+
+    gap: 45px;
+  }
+
+  .message-information h2 {
+    font-size: 36px;
+  }
+
+  .message-form {
+    padding: 30px 22px;
+  }
+
+  .form-heading h2 {
+    font-size: 28px;
+  }
+
+  .message-bottom {
+    padding: 0 22px 55px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .message-hero h1 {
+    font-size: 46px;
+  }
+
+  .message-information h2 {
+    font-size: 32px;
+  }
+
+  .message-form {
+    padding: 25px 18px;
+  }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.message-page button:focus-visible,
+.message-page input:focus-visible,
+.message-page textarea:focus-visible {
+  outline: 1px solid var(--message-gold);
+
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .message-page *,
+  .message-page *::before,
+  .message-page *::after {
+    transition: none !important;
+
+    animation: none !important;
+  }
+
+}

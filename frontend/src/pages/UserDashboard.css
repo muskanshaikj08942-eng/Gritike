@@ -1,0 +1,360 @@
+
+/* =========================================
+   GRITIKE USER DASHBOARD
+========================================= */
+
+.user-dashboard-page {
+  min-height: 100vh;
+  background: #f7f4ee;
+  color: #071936;
+  padding-bottom: 90px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.user-dashboard-header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 75px 40px 45px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.user-dashboard-label {
+  margin: 0 0 12px;
+
+  color: #b8892d;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.user-dashboard-header h1 {
+  margin: 0;
+
+  color: #071936;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.user-dashboard-header h1 span {
+  color: #b8892d;
+}
+
+.user-dashboard-subtitle {
+  margin: 12px 0 0;
+
+  color: #68758b;
+  font-size: 15px;
+}
+
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+.user-dashboard-logout {
+  min-width: 110px;
+
+  padding: 13px 22px;
+
+  border: 1px solid #071936;
+  background: transparent;
+
+  color: #071936;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.user-dashboard-logout:hover {
+  background: #071936;
+  color: white;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.user-dashboard-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 40px;
+}
+
+.user-section-label {
+  margin: 0 0 7px;
+
+  color: #b8892d;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.user-dashboard-content > h2 {
+  margin: 0 0 30px;
+
+  color: #071936;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.user-dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.user-dashboard-card {
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+
+  min-height: 155px;
+
+  padding: 28px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+  border: 1px solid #ded8cc;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.user-dashboard-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #b8892d;
+
+  box-shadow:
+    0 12px 30px rgba(7, 25, 54, 0.08);
+}
+
+
+/* =========================================
+   CARD NUMBER
+========================================= */
+
+.user-card-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #b8892d;
+
+  color: #b8892d;
+
+  font-family: Georgia, serif;
+  font-size: 13px;
+}
+
+
+/* =========================================
+   CARD TEXT
+========================================= */
+
+.user-dashboard-card h3 {
+  margin: 2px 0 9px;
+
+  color: #071936;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.user-dashboard-card p {
+  max-width: 330px;
+
+  margin: 0;
+
+  color: #747d8c;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.user-card-arrow {
+  position: absolute;
+
+  right: 25px;
+  bottom: 23px;
+
+  color: #b8892d;
+
+  font-size: 20px;
+
+  transition: transform 0.25s ease;
+}
+
+.user-dashboard-card:hover .user-card-arrow {
+  transform: translateX(5px);
+}
+
+
+/* =========================================
+   ACCOUNT INFORMATION
+========================================= */
+
+.user-account-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-top: 35px;
+
+  background: #ffffff;
+  border: 1px solid #ded8cc;
+}
+
+.user-account-info > div {
+  padding: 25px;
+
+  border-right: 1px solid #ded8cc;
+}
+
+.user-account-info > div:last-child {
+  border-right: none;
+}
+
+.user-account-info p {
+  margin: 0 0 9px;
+
+  color: #9a958b;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.user-account-info strong {
+  color: #071936;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.user-dashboard-loading {
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #b8892d;
+
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .user-dashboard-header {
+    padding: 55px 25px 35px;
+
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .user-dashboard-header h1 {
+    font-size: 40px;
+  }
+
+  .user-dashboard-content {
+    padding: 10px 25px;
+  }
+
+  .user-dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .user-account-info {
+    grid-template-columns: 1fr;
+  }
+
+  .user-account-info > div {
+    border-right: none;
+    border-bottom: 1px solid #ded8cc;
+  }
+
+  .user-account-info > div:last-child {
+    border-bottom: none;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+  .user-dashboard-header {
+    padding: 40px 18px 30px;
+  }
+
+  .user-dashboard-header h1 {
+    font-size: 34px;
+  }
+
+  .user-dashboard-content {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .user-dashboard-card {
+    padding: 22px;
+  }
+
+  .user-dashboard-card h3 {
+    font-size: 20px;
+  }
+}
+

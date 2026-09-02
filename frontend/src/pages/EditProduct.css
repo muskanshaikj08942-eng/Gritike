@@ -1,0 +1,493 @@
+
+/* =========================================================
+   GRITIKE — EDIT PRODUCT PAGE
+   Royal / Classy Admin Design
+========================================================= */
+
+.admin-page {
+  min-height: 100vh;
+  background: #f7f4ee;
+  color: #071936;
+  padding-bottom: 80px;
+}
+
+/* ================= HEADER ================= */
+
+.admin-header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 40px 40px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.admin-label {
+  margin: 0 0 12px;
+
+  color: #b8892d;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.admin-header h1 {
+  margin: 0;
+
+  color: #071936;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.admin-header h1 span {
+  color: #b8892d;
+}
+
+.admin-subtitle {
+  margin: 12px 0 0;
+
+  color: #64718a;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ================= DASHBOARD BUTTON ================= */
+
+.add-product-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 24px;
+
+  border: 1px solid #b8892d;
+  background: #b8892d;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.add-product-btn:hover {
+  background: #071936;
+  border-color: #071936;
+}
+
+/* ================= PRODUCT SECTION ================= */
+
+.admin-products-section {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  padding: 10px 40px 80px;
+}
+
+.admin-section-header {
+  margin-bottom: 28px;
+}
+
+.admin-section-label {
+  margin: 0 0 7px;
+
+  color: #b8892d;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.admin-section-header h2 {
+  margin: 0;
+
+  color: #071936;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/* ================= FORM CARD ================= */
+
+.admin-form-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 45px;
+
+  background: #ffffff;
+
+  border: 1px solid #ded8cc;
+
+  box-shadow: 0 15px 40px rgba(7, 25, 54, 0.07);
+}
+
+/* ================= ERROR ================= */
+
+.products-error {
+  margin-bottom: 25px;
+
+  padding: 14px 18px;
+
+  border-left: 4px solid #9b3838;
+
+  background: #fff4f4;
+
+  color: #8a3030;
+
+  font-size: 13px;
+}
+
+/* ================= FORM ================= */
+
+.admin-product-form {
+  width: 100%;
+}
+
+/* ================= FORM GROUP ================= */
+
+.admin-form-group {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+/* ================= LABEL ================= */
+
+.admin-form-group label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #071936;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+/* ================= INPUTS ================= */
+
+.admin-form-group input,
+.admin-form-group textarea,
+.admin-form-group select {
+  display: block;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 15px 16px;
+
+  border: 1px solid #d8d1c4;
+  border-radius: 0;
+
+  background: #fbfaf7;
+
+  color: #071936;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* ================= PLACEHOLDER ================= */
+
+.admin-form-group input::placeholder,
+.admin-form-group textarea::placeholder {
+  color: #aaa7a0;
+}
+
+/* ================= FOCUS ================= */
+
+.admin-form-group input:focus,
+.admin-form-group textarea:focus,
+.admin-form-group select:focus {
+  border-color: #b8892d;
+
+  background: #ffffff;
+
+  box-shadow: 0 0 0 3px rgba(184, 137, 45, 0.10);
+}
+
+/* ================= TEXTAREA ================= */
+
+.admin-form-group textarea {
+  min-height: 145px;
+
+  resize: vertical;
+
+  line-height: 1.7;
+}
+
+/* ================= SELECT ================= */
+
+.admin-form-group select {
+  min-height: 48px;
+
+  cursor: pointer;
+
+  appearance: auto;
+}
+
+/* ================= PRICE + CATEGORY ================= */
+
+.admin-form-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 25px;
+}
+
+/* ================= IMAGE URL HELP ================= */
+
+.admin-form-group small {
+  display: block;
+
+  margin-top: 9px;
+
+  color: #8a8a8a;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+/* ================= IMAGE PREVIEW ================= */
+
+.edit-image-preview {
+  margin: 5px 0 30px;
+
+  padding: 22px;
+
+  border: 1px solid #ded8cc;
+
+  background: #f7f4ee;
+}
+
+.edit-image-preview p {
+  margin: 0 0 15px;
+
+  color: #b8892d;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+
+  text-transform: uppercase;
+}
+
+.edit-image-preview img {
+  display: block;
+
+  width: 240px;
+  height: 300px;
+
+  object-fit: cover;
+
+  border: 1px solid #d8d1c4;
+
+  background: #eae6de;
+}
+
+/* ================= BUTTON AREA ================= */
+
+.admin-form-actions {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 14px;
+
+  padding-top: 28px;
+
+  border-top: 1px solid #e5e0d7;
+}
+
+/* ================= CANCEL ================= */
+
+.cancel-product-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 120px;
+
+  padding: 14px 22px;
+
+  border: 1px solid #bdb7ac;
+
+  background: #ffffff;
+
+  color: #071936;
+
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  transition: 0.3s ease;
+}
+
+.cancel-product-btn:hover {
+  border-color: #071936;
+
+  background: #071936;
+
+  color: #ffffff;
+}
+
+/* ================= SAVE ================= */
+
+.save-product-btn {
+  min-width: 170px;
+
+  padding: 15px 24px;
+
+  border: 1px solid #071936;
+
+  background: #071936;
+
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.save-product-btn:hover {
+  border-color: #b8892d;
+
+  background: #b8892d;
+
+  color: #071936;
+}
+
+.save-product-btn:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+/* ================= LOADING ================= */
+
+.admin-loading {
+  min-height: 70vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #b8892d;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 24px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .admin-header {
+    padding: 50px 25px 30px;
+
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .admin-header h1 {
+    font-size: 42px;
+  }
+
+  .admin-products-section {
+    padding: 10px 25px 60px;
+  }
+
+  .admin-form-wrapper {
+    padding: 30px 25px;
+  }
+
+  .admin-form-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+  .admin-header {
+    padding: 40px 18px 25px;
+  }
+
+  .admin-header h1 {
+    font-size: 36px;
+  }
+
+  .admin-products-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .admin-form-wrapper {
+    padding: 24px 18px;
+  }
+
+  .admin-form-actions {
+    flex-direction: column-reverse;
+
+    align-items: stretch;
+  }
+
+  .cancel-product-btn,
+  .save-product-btn {
+    width: 100%;
+  }
+
+  .edit-image-preview img {
+    width: 100%;
+    height: 330px;
+  }
+}

@@ -1,0 +1,149 @@
+.profile-page {
+  min-height: calc(100vh - 80px);
+  background: #f7f4ed;
+  padding: 80px 60px;
+}
+
+.profile-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile-label {
+  color: #b8892e;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.profile-container h1 {
+  margin: 0;
+  color: #071735;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 52px;
+  font-weight: 400;
+}
+
+.profile-container h1 span {
+  color: #b8892e;
+}
+
+.profile-subtitle {
+  color: #64748b;
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 45px;
+}
+
+.profile-card {
+  background: white;
+  border: 1px solid #ddd5c7;
+  padding: 45px;
+}
+
+.profile-avatar {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: #071735;
+  color: #b8892e;
+  border: 2px solid #b8892e;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+
+.profile-info {
+  border-top: 1px solid #e1ddd5;
+}
+
+.profile-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 22px 0;
+  border-bottom: 1px solid #e1ddd5;
+  gap: 30px;
+}
+
+.profile-item span {
+  color: #777;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.profile-item strong {
+  color: #071735;
+  font-size: 16px;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.profile-home-btn {
+  text-decoration: none;
+  border: 1px solid #071735;
+  color: #071735;
+  padding: 13px 25px;
+  font-weight: 600;
+}
+
+.profile-home-btn:hover {
+  background: #071735;
+  color: white;
+}
+
+.profile-logout-btn {
+  border: none;
+  background: #b8892e;
+  color: white;
+  padding: 14px 28px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile-logout-btn:hover {
+  background: #987321;
+}
+
+@media (max-width: 700px) {
+
+  .profile-page {
+    padding: 45px 20px;
+  }
+
+  .profile-container h1 {
+    font-size: 40px;
+  }
+
+  .profile-card {
+    padding: 25px;
+  }
+
+  .profile-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+  }
+
+  .profile-home-btn,
+  .profile-logout-btn {
+    text-align: center;
+  }
+}
